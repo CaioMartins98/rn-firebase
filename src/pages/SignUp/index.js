@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-} from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../services/firebase";
 import {
   ButtonLogin,
@@ -17,7 +13,7 @@ import {
   SnackBar,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
-// import { Container } from './styles';
+
 
 const SignUp = () => {
   const [email, setEmail] = useState("");

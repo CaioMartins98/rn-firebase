@@ -1,7 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import { signOut } from "firebase/auth";
 import React from "react";
-import { View } from "react-native";
+
 import { auth } from "../../services/firebase";
 
 import { ButtonLogOut, Container, Text, TextLogOut } from "./styles";
